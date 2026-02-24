@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+/* ------------------------------------------- */
+/* 1. GLOBAL VARIABLES               */
+/* ------------------------------------------- */
+:root {
+  /* Brand Colors */
+  --primary: #434ce6;
+  --primary-hover: #3a3fcf;
+  --primary-light: #f5f6ff;
+  
+  /* Text Colors */
+  --heading: #0f0f1b;
+  --secondary: #505050;
+  --muted: #686a6f;
+    --chart-primary: #434ce6;   /* Blue */
+    --chart-teal: #16c098;      /* Teal */
+    --chart-gray-bar: #F2F4F7;  /* Light Gray */
+    --chart-text: #9CA3AF;      /* Gray Text */
+  /* Status/UI Colors */
+  --star: #f7871b;
+  --success: #50df3a;
+  --teal: #16c098; /* Donut Chart Male Color */
+    --table-header-bg: #f9fafb;     /* Light Gray for Header */
+    --table-border: #e5e7eb;        /* Light Border */
+    --text-row: #6b7280;            /* Row Text Color */
+    
+    --status-new-bg: #DBE9F9;
+    --status-new-text: #5495E3;
+    
+    --status-interview-bg: #F4E8D4;
+    --status-interview-text: #F5A828;
+    
+    --status-hired-bg: #DCF9F3;
+    --status-hired-text: #57E4C4;
+    
+    --status-rejected-bg: #F6CCD1;
+    --status-rejected-text: #D1061F;
+  
+  /* Borders & Backgrounds */
+  --border-light: #f3f4f6;
+  --border-medium: #d1d5db;
+  --bg-page: #fafbfc;
+  --bg-input: #f5f7f9;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-poppins), sans-serif;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--bg-page); /* Updated to variable */
+}
+
+/* ------------------------------------------- */
+/* 2. UTILITY CLASSES                */
+/* ------------------------------------------- */
+@layer utilities {
+
+  /* --- Primary Brand --- */
+  .text-primary {
+    color: var(--primary);
+  }
+  .bg-primary {
+    background-color: var(--primary);
+  }
+  .border-primary {
+    border-color: var(--primary);
+  }
+  .hover\:bg-primary:hover {
+    background-color: var(--primary);
+  }
+  .hover\:text-primary:hover {
+    color: var(--primary);
+  }
+
+  /* --- Heading & Text --- */
+  .text-heading {
+    color: var(--heading);
+  }
+
+  /* --- Secondary Text --- */
+  .text-secondary {
+    color: var(--secondary);
+  }
+  .text-secondary-light {
+    color: rgba(80, 80, 80, 0.46);
+  }
+  .text-secondary-medium {
+    color: rgba(80, 80, 80, 0.61);
+  }
+
+  /* --- Muted Text --- */
+  .text-muted {
+    color: var(--muted);
+  }
+  .text-muted-light {
+    color: rgba(104, 106, 111, 0.8);
+  }
+  .text-muted-66 {
+    color: rgba(104, 106, 111, 0.66);
+  }
+
+  /* --- Description --- */
+  .text-description {
+    color: rgba(9, 38, 73, 0.66);
+  }
+
+  
+
+  /* --- Primary Hover --- */
+  .bg-primary-hover {
+    background-color: var(--primary-hover);
+  }
+  .hover\:bg-primary-hover:hover {
+    background-color: var(--primary-hover);
+  }
+
+  /* --- Primary Light (Backgrounds) --- */
+  .bg-primary-light {
+    background-color: var(--primary-light);
+  }
+  .hover\:bg-primary-light:hover {
+    background-color: var(--primary-light);
+  }
+
+  /* --- Star Rating --- */
+  .text-star {
+    color: var(--star);
+  }
+  .fill-star {
+    fill: var(--star);
+  }
+
+  /* --- Success/Green --- */
+  .text-success {
+    color: var(--success);
+  }
+  .bg-success {
+    background-color: var(--success);
+  }
+  /* Dashboard Trend Badges */
+  .bg-success-light {
+    background-color: rgba(35, 193, 10, 0.15); /* Custom Green Light */
+  }
+  .text-trend-green {
+    color: #0B8A00; /* Darker green for text */
+  }
+
+  /* --- Borders --- */
+  .border-light-gray {
+    border-color: var(--border-light);
+  }
+  .border-gray-medium {
+    border-color: var(--border-medium);
+  }
+  .border-gray-medium-light {
+    border-color: rgba(209, 213, 219, 0.48);
+  }
+  .border-gray-opacity {
+    border-color: rgba(209, 213, 219, 0.56);
+  }
+  .border-blue-accent {
+    border-color: #1b4dff;
+  }
+
+  /* --- Backgrounds --- */
+  .bg-page {
+    background-color: var(--bg-page);
+  }
+  .bg-input {
+    background-color: var(--bg-input);
+  }
+
+  /* --- Shadows --- */
+  .shadow-card {
+    box-shadow: 0px 0px 12.3px rgba(67, 76, 230, 0.08);
+  }
+}
