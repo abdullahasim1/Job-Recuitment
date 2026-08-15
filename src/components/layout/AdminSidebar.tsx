@@ -128,7 +128,7 @@ const AdminSidebar = ({ isOpen, onClose }: SidebarProps) => {
           <div className="mx-4 mt-4 mb-5 flex items-center justify-between rounded-2xl border border-(--border-light) bg-(--bg-input)/60 p-3">
             <div className="flex items-center gap-3">
               <div className="border-blue-accent relative h-[42px] w-[42px] overflow-hidden rounded-full border-2">
-                <Image src="/user-placeholder.png" alt="User" fill className="object-cover" />
+                <Image src="/avatar.svg" alt="User" fill className="object-cover" />
               </div>
               <div className="flex flex-col overflow-hidden">
                 <span className="text-heading truncate text-[13px] font-bold">Abdullah Asim</span>

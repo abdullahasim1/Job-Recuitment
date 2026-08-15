@@ -141,7 +141,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             <div className="flex items-center gap-3">
               {/* User Image */}
               <div className="border-blue-accent relative h-[42px] w-[42px] overflow-hidden rounded-full border-2">
-                <Image src="/user-placeholder.png" alt="User" fill className="object-cover" />
+                <Image src="/avatar.svg" alt="User" fill className="object-cover" />
               </div>
 
               {/* User Details */}

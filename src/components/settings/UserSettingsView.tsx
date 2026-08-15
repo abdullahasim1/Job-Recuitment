@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { User, Lock, Bell, Camera, Save } from "lucide-react";
 
 export const UserSettingsView = () => {
@@ -68,8 +69,14 @@ export const UserSettingsView = () => {
             {activeTab === "profile" && (
               <div className="animate-in fade-in slide-in-from-bottom-2 space-y-8">
                 <div className="flex items-center gap-6">
-                  <div className="relative flex h-[100px] w-[100px] items-center justify-center rounded-full border border-(--table-border) bg-gray-50">
-                    <User size={40} className="text-gray-300" />
+                  <div className="relative h-[100px] w-[100px] overflow-hidden rounded-full border-[3px] border-white shadow-primary-sm">
+                    <Image
+                      src="/avatar.svg"
+                      alt="Profile"
+                      width={100}
+                      height={100}
+                      className="object-cover"
+                    />
                     <button className="hover:text-primary absolute right-0 bottom-0 rounded-full border border-gray-200 bg-white p-2 shadow-sm">
                       <Camera size={14} />
                     </button>
