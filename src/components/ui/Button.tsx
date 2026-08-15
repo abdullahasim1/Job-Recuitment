@@ -30,16 +30,16 @@ const Button: React.FC<ButtonProps> = ({
   // ---- VARIANT CLASSES ----
   const variantClasses =
     variant === "outline"
-      ? `border border-primary text-primary bg-transparent hover:bg-primary hover:text-white`
+      ? `border border-primary bg-white text-primary hover:bg-primary-light hover:shadow-primary-sm`
       : variant === "secondary"
-        ? `bg-[#f5f7f9] text-heading hover:bg-[#e5e7eb]`
-        : `bg-primary text-white hover:bg-[#2e35c9]`; // primary
+        ? `bg-[#f3f4f6] text-heading hover:bg-[#e5e7eb]`
+        : `bg-primary-gradient text-white hover:bg-primary-gradient-hover shadow-primary-sm hover:shadow-primary-md`; // primary
 
   return (
     <button
       {...props}
       disabled={loading || props.disabled}
-      className={` ${typography.fontFamily} flex items-center justify-center rounded-[19px] font-semibold transition duration-200 ${sizeClasses} ${variantClasses} ${fullWidth ? "w-full" : "w-auto"} ${loading ? "cursor-not-allowed opacity-60" : ""} ${className} `}
+      className={` ${typography.fontFamily} flex items-center justify-center rounded-[19px] font-semibold transition-all duration-200 active:scale-[0.98] ${sizeClasses} ${variantClasses} ${fullWidth ? "w-full" : "w-auto"} ${loading ? "cursor-not-allowed opacity-60" : ""} ${className} `}
     >
       {loading ? (
         <div className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"></div>

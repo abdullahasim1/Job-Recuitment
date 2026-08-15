@@ -4,44 +4,46 @@
 /* 1. GLOBAL VARIABLES               */
 /* ------------------------------------------- */
 :root {
-  /* Brand Colors */
-  --primary: #434ce6;
-  --primary-hover: #3a3fcf;
-  --primary-light: #f5f6ff;
-  
+  /* Brand Colors — Modern SaaS Violet */
+  --primary: #7c3aed;
+  --primary-hover: #6d28d9;
+  --primary-light: #f5f3ff;
+  --primary-soft: #faf8ff;
+
   /* Text Colors */
-  --heading: #0f0f1b;
-  --secondary: #505050;
-  --muted: #686a6f;
-    --chart-primary: #434ce6;   /* Blue */
-    --chart-teal: #16c098;      /* Teal */
-    --chart-gray-bar: #F2F4F7;  /* Light Gray */
-    --chart-text: #9CA3AF;      /* Gray Text */
+  --heading: #101828;
+  --secondary: #344054;
+  --muted: #667085;
+  --chart-primary: #7c3aed; /* Violet */
+  --chart-teal: #10b981; /* Teal */
+  --chart-gray-bar: #f2f4f7; /* Light Gray */
+  --chart-text: #9ca3af; /* Gray Text */
+
   /* Status/UI Colors */
-  --star: #f7871b;
-  --success: #50df3a;
-  --teal: #16c098; /* Donut Chart Male Color */
-    --table-header-bg: #f9fafb;     /* Light Gray for Header */
-    --table-border: #e5e7eb;        /* Light Border */
-    --text-row: #6b7280;            /* Row Text Color */
-    
-    --status-new-bg: #DBE9F9;
-    --status-new-text: #5495E3;
-    
-    --status-interview-bg: #F4E8D4;
-    --status-interview-text: #F5A828;
-    
-    --status-hired-bg: #DCF9F3;
-    --status-hired-text: #57E4C4;
-    
-    --status-rejected-bg: #F6CCD1;
-    --status-rejected-text: #D1061F;
-  
+  --star: #f79009;
+  --success: #22c55e;
+  --teal: #10b981; /* Donut Chart Male Color */
+  --table-header-bg: #f9fafb; /* Light Gray for Header */
+  --table-border: #e4e7ec; /* Light Border */
+  --text-row: #667085; /* Row Text Color */
+
+  --status-new-bg: #dbe9f9;
+  --status-new-text: #5495e3;
+
+  --status-interview-bg: #f4e8d4;
+  --status-interview-text: #f5a828;
+
+  --status-hired-bg: #dcf9f3;
+  --status-hired-text: #10b981;
+
+  --status-rejected-bg: #f6ccd1;
+  --status-rejected-text: #d1061f;
+
   /* Borders & Backgrounds */
-  --border-light: #f3f4f6;
-  --border-medium: #d1d5db;
-  --bg-page: #fafbfc;
-  --bg-input: #f5f7f9;
+  --border-light: #eef0f4;
+  --border-medium: #d0d5dd;
+  --bg-page: #f6f7fb;
+  --bg-input: #f3f4f6;
 }
 
 @layer base {
@@ -61,7 +63,6 @@ body {
 /* 2. UTILITY CLASSES                */
 /* ------------------------------------------- */
 @layer utilities {
-
   /* --- Primary Brand --- */
   .text-primary {
     color: var(--primary);
@@ -79,6 +80,31 @@ body {
     color: var(--primary);
   }
 
+  /* --- Primary Gradient (Modern SaaS) --- */
+  .bg-primary-gradient {
+    background-image: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  }
+  .hover\:bg-primary-gradient:hover {
+    background-image: linear-gradient(135deg, #6d28d9 0%, #9333ea 100%);
+  }
+  .bg-primary-gradient-hover {
+    background-image: linear-gradient(135deg, #6d28d9 0%, #9333ea 100%);
+  }
+  .text-gradient-primary {
+    background-image: linear-gradient(135deg, #7c3aed, #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* --- Primary Shadows --- */
+  .shadow-primary-sm {
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+  }
+  .shadow-primary-md {
+    box-shadow: 0 8px 24px rgba(124, 58, 237, 0.35);
+  }
+
   /* --- Heading & Text --- */
   .text-heading {
     color: var(--heading);
@@ -89,10 +115,10 @@ body {
     color: var(--secondary);
   }
   .text-secondary-light {
-    color: rgba(80, 80, 80, 0.46);
+    color: rgba(52, 64, 84, 0.46);
   }
   .text-secondary-medium {
-    color: rgba(80, 80, 80, 0.61);
+    color: rgba(52, 64, 84, 0.61);
   }
 
   /* --- Muted Text --- */
@@ -100,18 +126,16 @@ body {
     color: var(--muted);
   }
   .text-muted-light {
-    color: rgba(104, 106, 111, 0.8);
+    color: rgba(102, 112, 133, 0.8);
   }
   .text-muted-66 {
-    color: rgba(104, 106, 111, 0.66);
+    color: rgba(102, 112, 133, 0.66);
   }
 
   /* --- Description --- */
   .text-description {
     color: rgba(9, 38, 73, 0.66);
   }
-
-  
 
   /* --- Primary Hover --- */
   .bg-primary-hover {
@@ -127,6 +151,9 @@ body {
   }
   .hover\:bg-primary-light:hover {
     background-color: var(--primary-light);
+  }
+  .bg-primary-soft {
+    background-color: var(--primary-soft);
   }
 
   /* --- Star Rating --- */
@@ -146,10 +173,10 @@ body {
   }
   /* Dashboard Trend Badges */
   .bg-success-light {
-    background-color: rgba(35, 193, 10, 0.15); /* Custom Green Light */
+    background-color: rgba(16, 185, 129, 0.12); /* Custom Green Light */
   }
   .text-trend-green {
-    color: #0B8A00; /* Darker green for text */
+    color: #0b8a00; /* Darker green for text */
   }
 
   /* --- Borders --- */
@@ -160,13 +187,13 @@ body {
     border-color: var(--border-medium);
   }
   .border-gray-medium-light {
-    border-color: rgba(209, 213, 219, 0.48);
+    border-color: rgba(208, 213, 221, 0.48);
   }
   .border-gray-opacity {
-    border-color: rgba(209, 213, 219, 0.56);
+    border-color: rgba(208, 213, 221, 0.56);
   }
   .border-blue-accent {
-    border-color: #1b4dff;
+    border-color: #7c3aed;
   }
 
   /* --- Backgrounds --- */
@@ -179,6 +206,9 @@ body {
 
   /* --- Shadows --- */
   .shadow-card {
-    box-shadow: 0px 0px 12.3px rgba(67, 76, 230, 0.08);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 12px 32px rgba(124, 58, 237, 0.12);
+  }
+  .shadow-card-hover {
+    box-shadow: 0px 2px 4px rgba(16, 24, 40, 0.05), 0px 16px 40px rgba(124, 58, 237, 0.18);
   }
 }

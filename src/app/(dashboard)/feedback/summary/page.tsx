@@ -94,7 +94,7 @@ const FeedbackSummaryPage = () => {
 
           {/* Action Buttons */}
           <div className="flex items-center gap-4">
-            <button className="bg-primary hover:bg-primary-hover h-[41px] w-[202px] rounded-[14px] text-[14px] font-semibold text-white shadow-lg shadow-indigo-100 transition-all active:scale-95">
+            <button className="bg-primary hover:bg-primary-hover h-[41px] w-[202px] rounded-[14px] text-[14px] font-semibold text-white shadow-primary-sm transition-all active:scale-95">
               Advance to Next Stage
             </button>
             <button className="h-[41px] w-[106px] rounded-[14px] bg-[#D1061F] text-[14px] font-semibold text-white shadow-lg shadow-red-100 transition-all hover:bg-[#b0051a] active:scale-95">

@@ -116,7 +116,7 @@ const FeedbackPage = () => {
 
           {/* Add Feedback Button */}
           <Link href="/feedback/add">
-            <button className="bg-primary hover:bg-primary-hover flex h-[45px] w-[171px] items-center justify-center gap-2 rounded-[14px] text-[14px] font-semibold text-white shadow-lg shadow-indigo-100 transition-all active:scale-95">
+            <button className="bg-primary hover:bg-primary-hover flex h-[45px] w-[171px] items-center justify-center gap-2 rounded-[14px] text-[14px] font-semibold text-white shadow-primary-sm transition-all active:scale-95">
               <Plus size={16} />
               Add Feedback
             </button>

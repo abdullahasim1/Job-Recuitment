@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "RecruitPro",
+  title: "UpMatch",
   description: "Recruitment Management System",
 };
 

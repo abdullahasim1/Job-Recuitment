@@ -191,7 +191,7 @@ const HomePage = () => {
                     variant="outline"
                     size="lg"
                     fullWidth
-                    className="h-14 rounded-2xl border-[1.5px] text-[15px] shadow-lg shadow-indigo-100"
+                    className="h-14 rounded-2xl border-[1.5px] text-[15px] shadow-primary-sm"
                   >
                     Copy Link
                   </Button>
@@ -199,7 +199,7 @@ const HomePage = () => {
                     variant="primary"
                     size="lg"
                     fullWidth
-                    className="hover:bg-primary-hover h-14 rounded-2xl text-[15px] shadow-lg shadow-indigo-100"
+                    className="hover:bg-primary-hover h-14 rounded-2xl text-[15px] shadow-primary-sm"
                   >
                     Join Meeting
                   </Button>

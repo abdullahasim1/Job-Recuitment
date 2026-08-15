@@ -31,7 +31,7 @@ const DashboardHeader = ({ onMenuClick }: DashboardHeaderProps) => {
   }
 
   return (
-    <header className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-(--table-border) bg-white px-5 shadow-sm md:px-8">
+    <header className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-(--table-border) bg-white/85 px-5 shadow-sm backdrop-blur-md md:px-8">
       {/* LEFT SIDE: Menu Button (Mobile) + Title */}
       <div className="flex items-center gap-4">
         {/* HAMBURGER MENU */}
@@ -49,12 +49,12 @@ const DashboardHeader = ({ onMenuClick }: DashboardHeaderProps) => {
       {/* RIGHT SIDE */}
       <div className="flex items-center gap-[15px]">
         {/* Search Bar */}
-        <div className="relative hidden h-[30px] w-[243px] md:block">
+        <div className="relative hidden h-[36px] w-[260px] md:block">
           <Search className="absolute top-1/2 left-3 -translate-y-1/2 text-(--muted)" size={14} />
           <input
             type="text"
             placeholder="Search"
-            className="bg-input focus:border-primary h-full w-full rounded-[9px] border border-(--table-border) pr-4 pl-9 text-xs text-(--secondary) outline-none placeholder:text-(--muted)"
+            className="bg-input focus:border-primary h-full w-full rounded-[10px] border border-(--table-border) pr-4 pl-9 text-xs text-(--secondary) outline-none transition-all placeholder:text-(--muted) focus:shadow-primary-sm"
           />
         </div>
 
@@ -64,9 +64,9 @@ const DashboardHeader = ({ onMenuClick }: DashboardHeaderProps) => {
         </button>
 
         {/* Notification Icon */}
-        <button className="hover:text-primary relative flex h-5 w-5 items-center justify-center text-(--secondary) transition-colors">
+        <button className="hover:text-primary relative flex h-9 w-9 items-center justify-center rounded-full text-(--secondary) transition-colors hover:bg-primary-soft">
           <Bell size={20} />
-          <span className="absolute top-0 right-0 h-1.5 w-1.5 rounded-full bg-(--status-rejected-text)"></span>
+          <span className="absolute top-1.5 right-1.5 h-1.5 w-1.5 rounded-full bg-(--status-rejected-text)"></span>
         </button>
       </div>
     </header>

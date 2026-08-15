@@ -37,7 +37,7 @@ const NewPassword = () => {
 
   return (
     <div
-      className={`shadow-card w-full max-w-[594px] rounded-[19.34px] bg-white px-[26px] pt-[35px] pb-10 sm:px-8 sm:py-10 ${typography.fontFamily}`}
+      className={`border-(--border-light) shadow-card w-full max-w-[594px] rounded-[22px] border bg-white px-[26px] pt-[35px] pb-10 sm:px-8 sm:py-10 ${typography.fontFamily}`}
     >
       {/* HEADER SECTION */}
       <div className="text-left">

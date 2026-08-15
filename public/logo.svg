@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 48" fill="none">
+  <defs>
+    <linearGradient id="logoMark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="logoText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#logoMark)"/>
+  <path d="M24 35 L24 16 M24 16 L17 23 M24 16 L31 23" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="56" y="33" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5">
+    <tspan fill="url(#logoText)">Up</tspan><tspan fill="#101828">Match</tspan>
+  </text>
+</svg>

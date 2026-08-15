@@ -16,7 +16,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <div className="flex w-full flex-1 flex-col overflow-hidden">
         <DashboardHeader onMenuClick={() => setSidebarOpen(true)} />
 
-        <main className="flex-1 overflow-y-auto p-4 md:p-8">{children}</main>
+        <main className="mx-auto w-full max-w-[1440px] flex-1 overflow-y-auto p-4 md:p-8">{children}</main>
       </div>
     </div>
   );

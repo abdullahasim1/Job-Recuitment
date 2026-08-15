@@ -9,10 +9,10 @@ export const poppins = Poppins({
 
 export const typography = {
   fontFamily: poppins.variable,
-  heading: "text-[21px] font-semibold tracking-[0.82px]",
-  subheading: "text-[18px] font-medium tracking-[0.5px]",
+  heading: "text-[21px] font-semibold tracking-[-0.02em]",
+  subheading: "text-[18px] font-medium tracking-[-0.01em]",
   label: "text-[12px] font-medium",
-  input: "text-[12px] text-[#4f4f4f75]",
-  body: "text-[12px] text-[#686a6f]",
-  small: "text-[10px] text-[#686a6fa8]",
+  input: "text-[12px] text-[#667085]",
+  body: "text-[12px] text-[#667085]",
+  small: "text-[10px] text-[#98a2b3]",
 };

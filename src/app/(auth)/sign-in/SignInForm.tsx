@@ -31,7 +31,7 @@ const SignInForm = () => {
 
   return (
     <div className="flex min-h-full w-full flex-col items-center justify-center px-4 py-12 sm:px-6">
-      <div className="shadow-card w-full max-w-[594px] rounded-[19.34px] bg-white px-5 py-8 sm:px-8 sm:py-10">
+      <div className="border-(--border-light) shadow-card w-full max-w-[594px] rounded-[22px] border bg-white px-5 py-8 sm:px-8 sm:py-10">
         {/* Header */}
         <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
           <h1 className="text-heading text-[20px] font-semibold tracking-[0.82px] sm:text-[21px]">

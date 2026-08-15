@@ -32,7 +32,7 @@ const RoleSelectField = <T extends Record<string, unknown>>({
             htmlFor={role.id}
             className={`${typography.fontFamily} cursor-pointer rounded-lg border p-4 transition ${
               formik.values[fieldName] === role.id
-                ? "border-indigo-600 bg-indigo-50"
+                ? "border-primary bg-primary-soft shadow-primary-sm"
                 : "border-gray-300 hover:bg-gray-50"
             } ${
               formik.touched[fieldName] && formik.errors[fieldName] && !formik.values[fieldName]
@@ -48,7 +48,7 @@ const RoleSelectField = <T extends Record<string, unknown>>({
                 value={role.id}
                 checked={formik.values[fieldName] === role.id}
                 onChange={formik.handleChange}
-                className="h-4 w-4 text-indigo-600"
+                className="h-4 w-4 accent-primary"
               />
 
               <h3 className={`${typography.label} text-gray-900`}>{role.title}</h3>

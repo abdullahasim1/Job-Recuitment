@@ -162,7 +162,7 @@ const InterviewsPage = () => {
                   </button>
 
                   {/* Join Meeting Button */}
-                  <button className="bg-primary hover:bg-primary-hover h-[50px] flex-1 rounded-2xl text-[14px] font-bold text-white shadow-lg shadow-indigo-100 transition-colors">
+                  <button className="bg-primary hover:bg-primary-hover h-[50px] flex-1 rounded-2xl text-[14px] font-bold text-white shadow-primary-sm transition-colors">
                     Join Meeting
                   </button>
                 </div>

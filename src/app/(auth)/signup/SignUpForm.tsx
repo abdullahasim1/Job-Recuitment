@@ -46,7 +46,7 @@ const SignUpForm = () => {
   return (
     //  CHANGE: 'shadow-[...]' -> 'shadow-card'
     <div
-      className={`shadow-card w-full max-w-[594px] rounded-[19.34px] bg-white px-5 py-8 sm:px-8 sm:py-10 ${typography.fontFamily}`}
+      className={`border-(--border-light) shadow-card w-full max-w-[594px] rounded-[22px] border bg-white px-5 py-8 sm:px-8 sm:py-10 ${typography.fontFamily}`}
     >
       {/* Header Row */}
       <div className="mb-8 flex items-center justify-between">

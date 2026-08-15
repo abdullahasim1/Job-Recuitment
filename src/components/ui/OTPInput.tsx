@@ -32,7 +32,7 @@ const OTPInput = <T extends Record<string, unknown>>({ name, formik }: OTPInputP
             value={otp[i] || ""}
             onChange={(e) => handleInput(i, e.target.value)}
             onBlur={() => formik.setFieldTouched(fieldName, true)}
-            className={`h-12 w-12 rounded-xl border text-center text-xl font-semibold text-gray-700 focus:ring-2 focus:ring-indigo-600 focus:outline-none sm:h-16 sm:w-16 sm:text-2xl ${touched && error ? "border-red-500" : "border-gray-300"} `}
+            className={`h-12 w-12 rounded-xl border text-center text-xl font-semibold text-gray-700 focus:border-primary focus:ring-2 focus:ring-primary/30 focus:outline-none sm:h-16 sm:w-16 sm:text-2xl ${touched && error ? "border-red-500" : "border-gray-300"} `}
           />
         ))}
       </div>

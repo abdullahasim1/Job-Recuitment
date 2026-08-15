@@ -29,7 +29,7 @@ const OtpVerification = () => {
 
   return (
     //  Container styling matched with Sign In & Role Select
-    <div className="shadow-card w-full max-w-[594px] rounded-[19.34px] bg-white px-5 py-8 sm:px-8 sm:py-10">
+    <div className="border-(--border-light) shadow-card w-full max-w-[594px] rounded-[22px] border bg-white px-5 py-8 sm:px-8 sm:py-10">
       {/* Heading */}
       <h1 className="text-heading text-xl font-semibold sm:text-2xl">
         Check your email for a code

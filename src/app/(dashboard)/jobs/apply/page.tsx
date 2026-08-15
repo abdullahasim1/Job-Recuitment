@@ -120,7 +120,7 @@ const ApplyJobPage = () => {
                 type="button"
                 variant="outline"
                 size="md"
-                className="h-[45px] w-[120px] rounded-xl border-[#434CE6] text-[#434CE6] hover:bg-indigo-50"
+                className="h-[45px] w-[120px] rounded-xl border-primary text-primary hover:bg-primary-soft"
                 onClick={() => (step === 1 ? router.push("/jobs") : setStep(step - 1))}
               >
                 Cancel

@@ -114,7 +114,7 @@ export const ApplicantsTable = ({ data, currentPage, onPageChange }: ApplicantsT
               onClick={() => onPageChange(page)}
               className={`flex h-8 w-8 items-center justify-center rounded-lg text-[13px] font-semibold transition-all ${
                 currentPage === page
-                  ? "bg-primary text-white shadow-md shadow-indigo-200"
+                  ? "bg-primary text-white shadow-primary-sm"
                   : "text-muted hover:bg-gray-50"
               }`}
             >

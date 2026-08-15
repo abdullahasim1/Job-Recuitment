@@ -57,7 +57,7 @@ const SelectRoleForm = () => {
     <form
       onSubmit={formik.handleSubmit}
       //  CHANGE: radius, padding aur shadow ko SignInForm jesa same kiya
-      className={`shadow-card w-full max-w-[594px] rounded-[19.34px] bg-white px-5 py-8 sm:px-8 sm:py-10 ${typography.fontFamily}`}
+      className={`border-(--border-light) shadow-card w-full max-w-[594px] rounded-[22px] border bg-white px-5 py-8 sm:px-8 sm:py-10 ${typography.fontFamily}`}
     >
       {/*  CHANGE: 'text-gray-900' -> 'text-heading' */}
       <h1 className="text-heading mb-2 text-2xl font-semibold">Choose Your Role</h1>
