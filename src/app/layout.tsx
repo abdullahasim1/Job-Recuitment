@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -16,7 +17,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-(family-name:--font-poppins)`}>{children}</body>
+      <body className={`${poppins.variable} font-(family-name:--font-poppins)`}>
+        {children}
+        <Script
+          src="http://localhost:3001/widget.js"
+          data-business-id="upmatch_recruitment"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }
